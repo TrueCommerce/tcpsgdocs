@@ -18,7 +18,7 @@ In short, you define one or more forms. Each form has a collection of controls (
 
 A dynamic form is simply a collection of controls used to gather data from the user. Each form MUST contain at lest one button unless it is intended to be the last form in a series. Without a button, users cannot move on to another form.
 
-1. Click **ADD** under the **CONTROLS** tab and select the desired control type. See the [control types](/Home/Projects/Dynamic-Forms/Documentation/Control-Types) documentation for information on each available control type.
+1. Click **ADD** under the **CONTROLS** tab and select the desired control type. See the [control types](control-types.md) documentation for information on each available control type.
 
 2. Change the control ID if desired. The ID is used as the key to access the control's data later on. ***If two controls in different forms share the same ID, the most recent control will overwrite the value from the previous one.***
 
@@ -30,4 +30,4 @@ When a user clicks a button on a form, the form is "submitted" to the server. Th
 
 ## How Data is Stored for Later Use
 
-While a session is active, the data provided by the user is stored in the platform database. This ensures sessions survive page refreshes and means sessions can be saved and continued later as well. Once a session is marked completed, the data is marked for deletion from the platform database. This means one of your routing scripts must pass the data you need on to an external service using a plugin. For more information on what plugins are available to use, please see the [plugin documentation](/Home/Projects/Dynamic-Forms/Documentation/Routing-Scripts/Plugins).
+While a session is active, the data provided by the user is stored in the platform database. This ensures sessions survive page refreshes and means sessions can be saved and continued later as well. Once a session is marked completed, the data is marked for deletion from the platform database. This means one of your routing scripts must pass the data you need on to an external service using a plugin. For more information on what plugins are available to use, please see the [plugin documentation](plugins.md).
